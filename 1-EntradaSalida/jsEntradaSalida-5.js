@@ -5,8 +5,8 @@ function Mostar()
 	var nombre;
 	var edad;
 
-	nombre = prompt("por favor ingresa tu nombre");
-	edad = prompt("por favor ingresa tu edad");
+	nombre = prompt("Por favor ingresa tu nombre:");
+	edad = prompt("Por favor ingresa tu edad:");
 
 	alert("Usted se llama"+ nombre +"y tiene" "+edad+" "años");
 }
