@@ -5,8 +5,10 @@
 function Mostar()
 {
 	var nombre;
+	var edad;
 
-	nombre=prompt("Por favor ingresa tu nombre:");
-	document.getElementById('elNombre').value=nombre;
+	nombre = prompt("Por favor ingresa tu nombre:");
+	edad = prompt("Ingresa tu edad:");
+	document.getElementById('z').value = nombre + " " + edad;
 }
 
