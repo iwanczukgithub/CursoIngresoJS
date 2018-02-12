@@ -5,9 +5,12 @@ function Mostrar()
 var edad;
 edad = document.getElementById('edad').value;
 
-if(edad == 15)
+if(edad==15)
 {
-	alert("niña bonita");
+	alert("tiene 15 años");
 }
-
+else
+{
+	alert("no tiene 15 años");
+}
 }//FIN DE LA FUNCIÓN

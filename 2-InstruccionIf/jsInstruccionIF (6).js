@@ -16,5 +16,4 @@ if(edad<13)
 {
 	alert("Es un niño");
 }
-
 }//FIN DE LA FUNCIÓN
