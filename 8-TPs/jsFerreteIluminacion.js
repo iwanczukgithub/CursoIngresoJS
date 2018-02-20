@@ -17,48 +17,63 @@ function CalcularPrecio ()
  	var precioBruto;
  	var porcentajeDesc;
 
- 	precioUni=10;
+ 	precioUni=35;
  	porcentajeDesc=0;
 
  	cantidad=document.getElementById('Cantidad').value;
  	marca=document.getElementById('Marca').value;
- 	cantidad=parseInt(cantidad);
 
  	if(cantidad>5)
  	{
  	porcentajeDesc=0.5;
- 	}else
- 	{
- 	if(cantidad==5)
  	}
- 	if(marca=="ArgentinaLuz")
- 	{
- 	porcentajeDesc=0.6;
- 	}else
- 	{
- 	porcentajeDesc=0.7;
- 	}
- 	if(cantidad==4)
- 	{
- 	if(marca=="ArgentinaLuz" || "FelipeLamparas")
- 	}
- 	porcentajeDesc=0.75;
- 	{else
- 	{
- 	porcentajeDesc=0.80;
- 	}
- 	if(cantidad==3)
- 	}
- 	if(marca=="ArgentinaLuz")
- 	{
- 	porcentajedesc=0.85;
- 	}
- 	if(marca=="FelipeLamparas")
- 	{
- 	porcentajeDesc=0.90;
- 	}else
- 	{
- 	porcentajeDesc=0.95;
- 	}
+ 	else
+ 		{
+	 	if(cantidad==5)
+	 		
+				if(marca=="ArgentinaLuz")
+				
+				porcentajeDesc=0.6;
+	 			
+	 			else
+	 			
+	 			porcentajeDesc=0.7;
+	 			
+			
+		
+				else
+					
+ 						if(cantidad==4)
+						
+						if(marca=="ArgentinaLuz" || "FelipeLamparas")
+						
+						
+						porcentajeDesc=0.75;
+ 						
+ 						else
+						
+ 						porcentajeDesc=0.80;
+						
+					
+							else
+								
+								if(cantidad==3)
+								
+								if(marca=="ArgentinaLuz")
+								
+								
+								porcentajeDesc=0.85;
+ 								
+ 								
+ 								if(marca=="FelipeLamparas")
+ 								
+ 								
+ 								porcentajeDesc=0.90;
+ 								
+ 								else
+								
+ 								porcentajeDesc=0.95;
+								
+				
 	precioFinal=(precioUni*cantidad)*porcentajeDesc;
  	document.getElementById('precioDescuento').value=precioFinal;
