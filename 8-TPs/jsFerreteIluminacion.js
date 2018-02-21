@@ -13,12 +13,9 @@ function CalcularPrecio ()
  	var cantidad;
  	var marca;
  	var preciofinal;
- 	var precioUni;
- 	var precioBruto;
+ 	var precioUni=35;
+ 	var precioBruto=1.1;
  	var porcentajeDesc;
-
- 	precioUni=35;
- 	porcentajeDesc=0;
 
  	cantidad=document.getElementById('Cantidad').value;
  	marca=document.getElementById('Marca').value;
@@ -27,53 +24,55 @@ function CalcularPrecio ()
  	{
  	porcentajeDesc=0.5;
  	}
- 	else
+
+ 	if(cantidad==5)
+ 	{
+ 	 	if(marca=="ArgentinaLuz")
+ 	 	{
+ 	 		porcentajeDesc=0.6;
+ 	 	}
+ 	 	else
+ 	 	{
+ 	 		porcentajeDesc=0.7;
+ 	 	}
+ 	}
+
+ 	if(cantidad==4)
+ 	{
+ 		if(marca=="ArgentinaLuz" || marca=="FelipeLamparas")
  		{
-	 	if(cantidad==5)
-	 		
-				if(marca=="ArgentinaLuz")
-				
-				porcentajeDesc=0.6;
-	 			
-	 			else
-	 			
-	 			porcentajeDesc=0.7;
-	 			
-			
-		
-				else
-					
- 						if(cantidad==4)
-						
-						if(marca=="ArgentinaLuz" || "FelipeLamparas")
-						
-						
-						porcentajeDesc=0.75;
- 						
- 						else
-						
- 						porcentajeDesc=0.80;
-						
-					
-							else
-								
-								if(cantidad==3)
-								
-								if(marca=="ArgentinaLuz")
-								
-								
-								porcentajeDesc=0.85;
- 								
- 								
- 								if(marca=="FelipeLamparas")
- 								
- 								
- 								porcentajeDesc=0.90;
- 								
- 								else
-								
- 								porcentajeDesc=0.95;
-								
-				
-	precioFinal=(precioUni*cantidad)*porcentajeDesc;
- 	document.getElementById('precioDescuento').value=precioFinal;
+ 			porcentajeDesc=0.75;
+ 		}
+ 		else
+ 		{
+ 			porcentajeDesc=0.8;
+ 		}
+ 	}
+
+ 	if(cantidad==3)
+ 	{
+ 		if(marca=="ArgentinaLuz")
+ 		{
+ 			porcentajeDesc=0.85;
+ 		}
+ 		else if(marca=="FelipeLamparas")
+ 		{
+ 			porcentajeDesc=0.90;
+ 		}
+ 		else
+ 		{
+ 			porcentajeDesc=0.95;
+ 		}
+ 	}
+ 	if(cantidad<3)
+ 	{
+ 		porcentajeDesc=1;
+ 	}
+
+	preciofinal=(precioUni*cantidad)*porcentajeDesc;
+	if(preciofinal>120)
+		preciofinal*precioBruto;
+		alert("Usted pago 10% de IIBB.”, siendo " + preciofinal*10/100 + " el impuesto que se pagó.");
+
+ 	document.getElementById('precioDescuento').value=preciofinal;
+ }
