@@ -14,5 +14,5 @@ function SacarResto()
   numeroDos=parseInt(numeroDos);
 
   resultado=numeroUno%numeroDos;
-  alert(resultado);
+  alert("El resto es: "+resultado);
 }

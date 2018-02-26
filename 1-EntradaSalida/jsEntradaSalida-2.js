@@ -4,7 +4,7 @@ function Mostar()
 {
 	var nombre;
 
-	nombre = prompt("Por favor ingresa tu nombre:");
+	nombre=prompt("Por favor ingresa tu nombre:");
 	alert(nombre);
 }
 

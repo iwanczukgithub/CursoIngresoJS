@@ -13,7 +13,7 @@ function sumar()
   numeroUno=parseInt(numeroUno);
   numeroDos=parseInt(numeroDos);
   resultado=numeroUno+numeroDos;
-  alert("La suma es" + " " + resultado);
+  alert("La suma es: "+resultado);
 }
 
 function restar()
@@ -27,7 +27,7 @@ function restar()
   numeroUno=parseInt(numeroUno);
   numeroDos=parseInt(numeroDos);
   resultado=numeroUno-numeroDos;
-  alert("La resta es" + " " + resultado);
+  alert("La resta es: "+resultado);
 }
 
 function multiplicar()
@@ -41,7 +41,7 @@ function multiplicar()
   numeroUno=parseInt(numeroUno);
   numeroDos=parseInt(numeroDos);
   resultado=numeroUno*numeroDos;
-  alert("La multiplicacion es" + " " + resultado);
+  alert("La multiplicacion es: "+resultado);
 }
 
 function dividir()
@@ -55,6 +55,6 @@ function dividir()
   numeroUno=parseInt(numeroUno);
   numeroDos=parseInt(numeroDos);
   resultado=numeroUno/numeroDos;
-  alert("La division es" + " " + resultado);
+  alert("La division es: "+resultado);
 }
 
