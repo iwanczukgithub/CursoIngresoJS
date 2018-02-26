@@ -1,20 +1,15 @@
 function Mostrar()
 {
 //tomo la edad  
-
 var edad;
-edad = document.getElementById('edad').value;
 
-if(edad==15)
+edad=document.getElementById('edad').value;
+if(edad>17)
 {
-	alert("tiene 15 años");
+	alert("Es mayor de edad.");
 }
-if(edad<15)
+else
 {
-	alert("tiene menos de 15 años");
-}
-if(edad>15)
-{
-	alert("tiene mas de 15 años");
+	alert("Es menor de edad.")
 }
 }//FIN DE LA FUNCIÓN
