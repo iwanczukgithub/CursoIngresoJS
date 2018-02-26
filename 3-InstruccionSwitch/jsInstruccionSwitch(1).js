@@ -4,11 +4,17 @@ function Mostrar()
 var mes=document.getElementById('mes').value;
 switch(mes)
 {
-case "Febrero":
-	alert("28 o 29 dias");
-	break;
 case "Enero":
-	alert("30 dias");
+	alert("Que comiences bien el año!");
+	break;
+case "Marzo":
+	alert("A clases!");
+	break;
+case "Julio":
+	alert("Se vienen las vacaciones.");
+	break;
+case "Diciembre":
+	alert("Felices fiestas!");
 	break;
 }
 }//FIN DE LA FUNCIÓN
