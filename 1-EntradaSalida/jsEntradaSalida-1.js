@@ -1,6 +1,9 @@
-//Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
-function Mostar()
+//Debemos lograr mostrar un mensaje al presionar el botón  'mostrar'.
+function mostrar()
 {
-	alert("Esto funciona de maravilla!");
+	var num1=5;
+	var num2=6;
+	var resultado=num1 + num2;
+	alert(resultado);
 }
 

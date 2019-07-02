@@ -1,10 +1,8 @@
 /*Debemos lograr tomar un nombre con 'prompt' 
-y luego mostrarlo por 'alert' al presionar el botón  'MOSTRAR'*/
-function Mostar()
+y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
+function mostrar()
 {
-	var nombre;
-
-	nombre=prompt("Por favor ingresa tu nombre:");
-	alert(nombre);
+    var nombre=prompt("Ingrese un dato");
+    alert("Hola "+nombre);
 }
 
