@@ -1,13 +1,7 @@
-function Mostrar()
+function mostrar()
 {
-var clave=prompt("Igrese la clave:");
 
-while(clave!="utn750")
-{
-	alert("La clave es incorrecta.");
-	clave=prompt("Ingrese la clave:");
-}
+var clave = prompt("ingrese el número clave.");
 
-alert("Bien venido");
 
 }//FIN DE LA FUNCIÓN
