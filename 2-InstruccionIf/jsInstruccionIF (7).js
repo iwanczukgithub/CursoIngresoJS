@@ -6,6 +6,6 @@ function mostrar()
 
     if(x<18 && y!="Soltero")
     {
-       alert( "Es muy pequeño para NO ser soltero. ");
+       alert( "Es muy pequeño para no ser soltero.");
     }
 }
